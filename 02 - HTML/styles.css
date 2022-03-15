@@ -1,6 +1,6 @@
 header{
     font-family: Bitter;
-    background-color: #a4dcfd;
+    background-color: blueviolet;
 }
 
 h1, h2, h3{
@@ -12,7 +12,7 @@ header{
 }
 
 .navBar{
-    background-color: #03989e;
+    background-color: red;
 }
 
 body{
