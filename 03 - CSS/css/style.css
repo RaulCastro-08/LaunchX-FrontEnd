@@ -34,7 +34,7 @@ p{
 }
 
 img{
-    height: 100vh;
+    max-height: 100vh;
     width: auto;
 }
 
@@ -88,6 +88,16 @@ header{
     padding: 2rem;
 }
 
+/*Vaccines*/
+.vaccines{
+    display: flex;
+    justify-content: space-evenly;
+}
+.vaccines img{
+    height: 120px;
+    filter: grayscale(100%);
+    opacity: 50%
+}
 /*Seccion 2*/
 .section2{
     width: 100%;
