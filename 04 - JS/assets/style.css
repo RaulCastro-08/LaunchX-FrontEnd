@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.search form{
+    background-color: rgb(42, 59, 75);
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.search a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: rgb(201, 195, 195);
+}
+
+.search form input{
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 5px;
+
+}
+
+.search form button{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid-fluid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+}
+
+.pokemon-card{
+    border-radius: 5px;
+    margin: 0.5rem 2rem;
+    
+    box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
+    cursor: pointer;
+}
+
+.pokemon-card .number, .info-pokemon .number{
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.pokemon-card img{
+    width: 100%;
+    height: auto;
+}
+
+.container.active{
+    transform: translate(0, 0);
+}
+
+.container{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.85);
+    transition: 0.3s ease;
+    transform: translate(-100%, 0);
+    display: flex;    
+}
+.info-pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    
+    box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
+}
+
+.info-pokemon img{
+    width: 100%;
+    height: auto;
+}
+.info-pokemon div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.poke-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.poke-info .estadisticas, .poke-info .movimientos{
+    margin: 0;
+    text-align: end;
+}

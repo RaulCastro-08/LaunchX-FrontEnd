@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="search">
+            <form id="form-pokemon">
+                <a href="pokedex.html">POKEDEX</a>
+                <input type="text" name="pokemon" id="pokemon" placeholder="Nombre pokemon">
+                <button type="submit">
+                    <img src="assets/pokebola.png" alt="pokebola">
+                </button>
+            </form>
+        </div>
+    </header>
+    <nav class="links"></nav>
+
+    <section class="container">
+        <button class="panel-btn hamburger--vortex is-active" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="info-pokemon"></div>
+    </section>
+
+    <main class="grid-fluid"></main>
+    <template id="pokemon-template">
+        <div class="pokemon-card">
+            <figure>
+                <img>
+            </figure>
+            <div class="info">
+                <span class="number"></span>
+                <h3 class="name"></h3>
+                <small class="type">Tipo:<span></span></small>
+            </div>
+        </div>
+    </template>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
