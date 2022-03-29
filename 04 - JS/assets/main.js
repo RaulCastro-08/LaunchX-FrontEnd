@@ -34,6 +34,7 @@ async function getpokemon(query){
             moves = pokemon.moves.slice(5,10),
             color = colors[pokemon.types[0].type.name];
             
+        console.log(pokemon);
         $infoPokemon.style.backgroundColor = color;
         pokeInner = `
             <div class="card">
@@ -50,13 +51,14 @@ async function getpokemon(query){
                 <div class="estadisticas">
                     <h3>Estadisticas</h3>
         `;
-        stats.forEach(el => pokeInner +=`<p>${el.stat.name}: ${el.base_stat}</p>`);
+        //stats.forEach(el => pokeInner +=`<p>${el.stat.name}: ${el.base_stat}</p>`);
+        stats.forEach(el => pokeInner +=`<span>${el.stat.name.toUpperCase()}: ${el.base_stat}</span> <progress max="200" value="${el.base_stat}"></progress>`);
         pokeInner += `
                 </div>
                 <div class="movimientos">
                     <h3>Movimientos</h3>
         `;
-        moves.forEach(el => pokeInner +=`<p>${el.move.name}</p>`);
+        moves.forEach(el => pokeInner +=`<p>${el.move.name.toUpperCase()}</p>`);
         pokeInner += `
                 </div>
             </div>

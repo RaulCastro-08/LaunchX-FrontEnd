@@ -90,12 +90,10 @@ img{
     transform: translate(-100%, 0);
     display: flex;    
 }
+
 .info-pokemon{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 500px;
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
     margin: auto;
@@ -104,11 +102,14 @@ img{
 }
 
 .info-pokemon img{
-    width: 100%;
-    height: auto;
+    width: 80%;
 }
+
 .info-pokemon div{
     width: 50%;
+    height: auto;
+}
+.card div{
     margin: 0 auto;
 }
 
@@ -125,12 +126,26 @@ img{
 
 .poke-info{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .poke-info .estadisticas, .poke-info .movimientos{
-    margin: 0;
-    text-align: end;
+    text-align: start;
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 1rem 0;
+}
+
+.poke-info .estadisticas span, .poke-info .movimientos p{
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.info-pokemon progress{
+    width: 100%;
+    height: 5px;
+    transition: all 0.3s ease;
+    margin: 5px 0;
 }
