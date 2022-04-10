@@ -70,7 +70,7 @@ async function getpokemon(query){
         let message = err.statusText || 'Ocurrio un error';
         pokeInner = `
             <figure>
-                <figcaption>Error ${err.status}: ${message}</figcaption
+                <figcaption>Error ${err.status}: ${message}</figcaption>
             </figure>
         `;
         console.log(err);
